@@ -279,7 +279,7 @@
 }
 
 - (void)configDefaultImageName {
-    self.takePictureImageName = @"takePicture";
+    self.takePictureImageName = @"camera_button3";
     self.photoSelImageName = @"photo_sel_photoPickerVc";
     self.photoDefImageName = @"photo_def_photoPickerVc";
     self.photoNumberIconImageName = @"photo_number_icon";
