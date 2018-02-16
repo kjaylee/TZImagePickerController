@@ -832,7 +832,9 @@
         preferredLanguage = @"zh-Hant";
     } else if ([preferredLanguage rangeOfString:@"vi"].location != NSNotFound) {
         preferredLanguage = @"vi";
-    } else {
+    } else if ([preferredLanguage rangeOfString:@"ko-KR"].location != NSNotFound){
+        preferredLanguage = @"ko";
+    }else {
         preferredLanguage = @"en";
     }
     _languageBundle = [NSBundle bundleWithPath:[[NSBundle tz_imagePickerBundle] pathForResource:preferredLanguage ofType:@"lproj"]];
